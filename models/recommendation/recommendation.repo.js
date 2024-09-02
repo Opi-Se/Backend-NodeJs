@@ -10,7 +10,7 @@ exports.getFirstRecommendation = (nationalId) => {
             statusCode: 201,
             message: "success",
         }
-        return fetch(`https://hybrid-recommendation-system-a.onrender.com/nationalId=${nationalId}`)
+        return fetch(`https://ml-api-x5og.onrender.com/nationalId=${nationalId}`)
             .then(recommendation => recommendation.json())
             .then(async data => {
                 result = {
